@@ -4,10 +4,22 @@ links.forEach(link => {
     link.onmouseout = function () { link.classList.remove("active") };
 });
 
-document.getElementById("livebtn").onclick = function () {
+let liveBtn = document.getElementById("livebtn");
+let manageBtn = document.getElementById("managebtn");
+
+
+liveBtn.onclick = function () {
     document.getElementById("livesupport").classList.toggle("text-nowrap")
+    if (liveBtn.innerText === "Continue reading")
+        liveBtn.innerText = "Hide";
+    else
+        liveBtn.innerText = "Continue reading";
 }
 document.getElementById("managebtn").onclick = function () {
+    if (manageBtn.innerText === "Continue reading")
+        manageBtn.innerText = "Hide";
+    else
+        manageBtn.innerText = "Continue reading";
     document.getElementById("managemopile").classList.toggle("text-nowrap")
 }
 
