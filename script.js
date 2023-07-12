@@ -7,7 +7,6 @@ links.forEach(link => {
 let liveBtn = document.getElementById("livebtn");
 let manageBtn = document.getElementById("managebtn");
 
-
 liveBtn.onclick = function () {
     document.getElementById("livesupport").classList.toggle("text-nowrap")
     if (liveBtn.innerText === "Continue reading")
